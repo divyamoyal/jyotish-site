@@ -1,0 +1,314 @@
+@charset "utf-8";
+/* ............ reset css ........... */
+
+@font-face
+{
+font-family: vigyapti;
+src: url('css/font/vigyapti.ttf');
+}
+body{
+	height:auto;
+	margin:0;
+	padding:0;
+	font-family:vigyapti;
+	font-size:12px;
+	color:#333;
+	background:url(../images/fairy-starry-night-sky.gif) repeat;
+}
+h1,h2,h3,h4,h5,h6,p,ul,label{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration:none;
+	font-size:11px;
+}
+/* ......... common classes ............. */
+.clear{ clear:both;}
+.starLine{
+	background: url(../images/starline.gif) repeat-x;
+	height: 20px;
+    margin-right: 6px;
+    overflow: hidden;
+}
+/* ......... wrapper start .............. */
+.wrapper{
+	width:1000px;
+	margin:0 auto;
+	padding:0;
+	border:1px solid #aaa;
+}
+	.header{
+		height: 173px;
+		width: 100%;
+		
+	}
+		.head1st{
+			height:145px;
+			background-image: url(../images/paternBar.png), url(../images/gred-orange.png);
+			background-position: center top, right 27px;
+			background-repeat: no-repeat;
+			background-color:#da5f26;
+			opacity:.9;
+			text-align:center;
+			position:relative;
+			
+		}
+			.head1st .logo{
+			    height: 110px;
+				margin: 35px 0 0;
+				opacity: 0.9;
+			}
+			.head1st .om{ 
+				height: 118px;
+				margin: 26px 0 0;
+				opacity: 0.8;
+				position: absolute;
+			}
+			.om.innerOm{
+				height: 55px;
+				margin: 55px 0 0 40px;
+				opacity: 0.5;
+			}
+			.head1st .omLeft{ float:left; left:10px}
+			.head1st .omRight{ float:right; right:10px}
+			.head1st .planet{
+				height: 251px;
+				margin: 0;
+				opacity: 0.6;
+				position: absolute;
+				right: -120px;
+				top: -58px;
+				z-index: 0;
+			}
+		.head2nd{
+			height:24px;
+			background: url(../images/footer.png) no-repeat;
+			margin-top: 2px;
+		}
+			.head2nd .nav{	
+			}
+			.nav li{
+				display:inline-block;
+				float:left;
+			}
+			.nav li a{
+				border-right: 2px solid #111111;
+				color: #FFFFFF;
+				display: block;
+				font-family: Tahoma;
+				font-size: 12px;
+				font-weight: bold;
+				letter-spacing: 1px;
+				padding: 5px 20px;
+			}
+			.nav li a:hover{
+				background:#111;
+			}
+			.selectedLi{background:#111;}
+	.container{
+		width:100%;
+		height:auto;
+		background:#fff;
+	}
+		.left,.middle,.right{
+			float:left;
+			min-height:500px;
+			background:#fff;
+		}
+		.left{
+			width:223px;
+			height:100%;
+			
+		}
+			.menuTable{
+				 margin-top: 5px;
+				 letter-spacing: 1px;
+			}
+			.menuTable td{
+			}
+			.menuTable table{
+				background: none repeat scroll 0 0 #FFDD66;
+				margin-left: 13px;
+				width: 194px;
+				color:#B63815;
+				font-size:14px;
+				font-weight:bold;
+			}
+			.menuTable table th{
+				background:url(../images/th.PNG) repeat-x;
+				color: #FFFFFF;
+				font-size: 17px;
+				font-weight:bold;
+				line-height: 21px;
+				padding: 6px 0;
+			}
+			.menuTable table td{
+				background: url("../images/starseed.gif") no-repeat scroll 1px 7px transparent;
+    			padding-left: 17px;
+			}
+				.menuTable table td a{color:#B63815;font-size:14px;font-weight:bold;}
+
+		.middle{
+			width: 775px;
+			height:auto;
+			background:#fff;	
+		}
+			.middle .upper{
+				height:150px;
+			}
+				.upper .wellcm{
+					margin: 5px 1px 1px 1px;
+				}
+				.upper .profile{
+					width:270px;
+					height:145px;
+					float:right;
+					border: 1px solid #AAAAAA;
+    				box-shadow: 0 0 10px #AAAAAA inset;
+					font-family: sans-serif;
+				}
+				.profile .about{
+					display: block;
+					font-size: 15px;
+					font-weight: bold;
+					height: 21px;
+					text-align: center;
+				
+				}
+				.profile label{
+					display: block;
+					height: 109px;
+					margin: 5px 8px;
+					text-align: justify;
+					width: 153px;
+					
+				}
+				.profile .pic{
+					height:100px;
+					width:100px;
+					float:right;
+					
+					overflow:hidden;
+				}
+			.middle .bottom{
+				height:auto;
+				margin: 5px 0;
+			}
+	.footer{
+		background: url(../images/footer.png) no-repeat;
+		color: #EEEEEE;
+		font-family: tahoma;
+		font-size: 11px;
+		height: 24px;
+		line-height: 22px;
+		text-align: center;
+	}
+/**/
+/* ... box table style ... */
+.boxTable{
+	width: 100%;
+}
+.boxTable td{
+	border: 1px solid #5F372D;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 0 0 10px #5F372D inset;
+    height: 170px;
+    overflow: hidden;
+    width: 25%;
+}
+	.boxTable .img{
+		height: 100%;
+		overflow: hidden;
+		text-align: center;
+		width: 100%;
+		cursor: pointer;
+	}
+	.boxTable .img label.image{
+	    display: block;
+		height: 139px;
+		margin: 4px 4px 0;
+		overflow: hidden;
+		width: 178px;
+	}
+	.boxTable .img label.text{
+		background: none repeat scroll 0 0 #5F372D;
+		border-top: 1px solid #FFFFFF;
+		color: #EEEEEE;
+		display: block;
+		font-size: 15px;
+		font-weight: bold;
+		text-align: center;
+	}
+/*Details page ---------*/
+.deatails{
+	height: 690px;
+	/*height:500px;*/
+}
+.iconMargin{margin-right:6px}
+.deatails .rows{}  
+.deatails .topRow, .deatails .bottomRow{
+	height:96px;
+}  
+.deatails .midRow{
+	height:490px;
+}
+.deatails .rows .cols{
+	float:left;
+	height:100%
+}
+.deatails .rows .leftCol, .deatails .rows .rightCol{
+	width:108px;
+}  
+.deatails .rows .midCol{
+	border: 1px solid #FFBFC0;
+    border-radius: 5px 5px 5px 5px;
+    height: 97%;
+    margin: 11px 0 0 12px;
+    width: 759px;
+}
+.outerIcons{
+	border-radius: 4px 4px 4px 4px;
+    border-style: inset;
+    border-width: 2px;
+    height: 85px;
+    margin: 9px 0px 0px 9px;
+    overflow: hidden;
+    width: 97px;
+    margin: 5px 0px 5px 9px;
+	border-bottom-color:#000;
+	border-right-color:#000;
+	text-align: center;
+}
+.outerIcons img{
+
+}
+/*2 columns pages*/
+.column{
+	height:100%;
+}
+.column table{
+	width:100%;
+}
+.column table tr th{
+	color: #BA8B0D;
+	text-align: left;
+	padding: 0px 12px;
+}
+	.column table tr th span{border-bottom: 3px solid #C6A307;display: block;font-size: 30px;}
+.column table tr td{
+	border-bottom: 1px solid #FFCA70;
+}
+.leftColumn{width:100px;}
+.rightColumn{width:auto;padding-left: 10px;padding-right: 10px;line-height: 30px;}
+.rightColumn h3{color: #CC2F26;font-size: 15px;text-decoration: underline;}
+.column table td ul{ margin:0 0 0 20px}
+.column table td ul li{
+	
+}
+.contactTable{    border: 1px solid #FFCA70;
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 600px !important;}
+.contactTable th{border-bottom: 1px solid #FFCA70;padding: 30px !important;}
+.contactTable td{line-height: 28px;padding: 10px;}
