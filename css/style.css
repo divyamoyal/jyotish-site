@@ -161,7 +161,7 @@ a{
 					margin: 5px 1px 1px 1px;
 				}
 				.upper .profile{
-					width:270px;
+					width:266px;
 					height:145px;
 					float:right;
 					border: 1px solid #AAAAAA;
@@ -204,6 +204,7 @@ a{
 		line-height: 22px;
 		text-align: center;
 	}
+	.footer a{ color:#eee;}
 /**/
 /* ... box table style ... */
 .boxTable{
